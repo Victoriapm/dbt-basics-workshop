@@ -6,6 +6,9 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+### About the data:
+- [Netflix audience behaviour - UK movies](https://www.kaggle.com/vodclickstream/netflix-audience-behaviour-uk-movies)
+- [Movies and TV Shows listings on Netflix](https://www.kaggle.com/shivamb/netflix-shows)
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
