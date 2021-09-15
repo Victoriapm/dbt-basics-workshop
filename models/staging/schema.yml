@@ -18,7 +18,7 @@ models:
     - name: STG_VODCLICKSTREAM_UK_MOVIES
       description: staging model with all records of movies watched via streaming opting for Netflix
       columns:
-          - name: id
+          - name: stream_id
             description: "The primary key for this table"
             tests:
                 - unique
