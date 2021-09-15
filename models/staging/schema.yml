@@ -1,0 +1,26 @@
+
+version: 2
+
+models:
+    - name: stg_netflix_titles
+      description: staging model with all netflix titles from source
+      columns:
+          - name: show_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: title
+            description: Title of the Netflix show
+            tests:
+                - not_null
+
+    - name: STG_VODCLICKSTREAM_UK_MOVIES
+      description: staging model with all records of movies watched via streaming opting for Netflix
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
