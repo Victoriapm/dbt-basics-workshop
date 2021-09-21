@@ -15,7 +15,7 @@ models:
             tests:
                 - not_null
 
-    - name: STG_VODCLICKSTREAM_UK_MOVIES
+    - name: stg_vodclickstream_uk_movies
       description: staging model with all records of movies watched via streaming opting for Netflix
       columns:
           - name: stream_id
