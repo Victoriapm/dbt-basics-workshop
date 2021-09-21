@@ -18,8 +18,8 @@ This project is based in open data sets found in Kaggle.com:
 We will build a project using dbt and a postgres database, but any other database of your choice could be used. 
 The requirements are:
 - [docker](https://www.docker.com/) to run postgres and can be used for dbt as well (optional) 
-- [postgres](https://www.postgresql.org/) (optional - but a database is needed)
-- [dbt](https://docs.getdbt.com/dbt-cli/installation) (local installation)
+- [postgres](https://www.postgresql.org/) (optional - but a database is needed). Follow [this link](https://www.postgresqltutorial.com/install-postgresql-macos/) for instructions on how to install and create a database. I used one database 'production' with a schema for local development 'dbt_victoria_mola' and another schema 'master' for production deployment. 
+- [dbt](https://docs.getdbt.com/dbt-cli/installation) (local installation) Follow link for instructions or use a docker image from oficial [dbt repo](https://github.com/dbt-labs/dbt/)
 
 #### Execution
 After having installed the required tools and cloning this repo, execute the following commnads: 
