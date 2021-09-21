@@ -20,7 +20,11 @@ Try running the following commands:
 - dbt run
 - dbt test
 
-Inside the project we have the following files: 
+Inside the repo we have two projects: 
+- init-project: this will be the base to start and conduct the workshop
+- complete-projetc: this will be the end project as it will look like once the workshop has been finished
+
+A project includes the following files: 
 - dbt_project.yml: file used to configure the dbt project, make sure the profile here matches the one setup during local installation in ~/.dbt/profiles.yml
 - csv files in the data folder: these will be our sources, files described above
 - Files inside folder models: The sql files contain the scripts to run our models, this will cover staging, core and a datamarts models. At the end, these models will follow this structure: 
@@ -34,7 +38,7 @@ Inside the project we have the following files:
 #### Execution
 After having installed the required tools and cloning this repo, execute the following commnads: 
 
-1. Change into the project's directory from the command line: `$ cd dbt-basics-workshop`
+1. Change into the project's directory from the command line: `$ cd dbt-basics-workshop/complete-project`
 2. Load the CSVs into the database. This materializes the CSVs as tables in your target schema: `$ dbt seed`
 3. Run the models: `$ dbt run`
 4. Generate documentation for the project: `$ dbt docs generate`
