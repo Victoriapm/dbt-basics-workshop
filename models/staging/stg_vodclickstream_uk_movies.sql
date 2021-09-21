@@ -19,6 +19,7 @@ select
 
 
 from {{ ref('vodclickstream_uk_movies') }}
+where duration > 0
 
 -- dbt run --model <model.sql> --var 'is_test_run: false'
 {% if var('is_test_run', default=true) %}
