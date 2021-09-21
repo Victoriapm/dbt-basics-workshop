@@ -1,0 +1,8 @@
+
+version: 2
+
+models:
+    - name: dm_movie_streams_analysis
+      description: This model calculates average stream duration for every model 
+      in our Netflix titles data
+      
