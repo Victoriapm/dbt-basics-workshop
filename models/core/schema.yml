@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+    - name: dim_movies
+
+    - name: dim_series
+
+    - name: fact_movie_streams
+

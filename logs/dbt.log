@@ -1,0 +1,456 @@
+2021-09-14 18:03:13.071607 (MainThread): Running with dbt=0.20.0
+2021-09-14 18:03:14.439851 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/victoriamola/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-09-14 18:03:14.441217 (MainThread): Tracking: tracking
+2021-09-14 18:03:14.441742 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a54bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9663a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b966760>]}
+2021-09-14 18:03:14.459008 (MainThread): Partial parsing not enabled
+2021-09-14 18:03:14.479702 (MainThread): Parsing macros/catalog.sql
+2021-09-14 18:03:14.481960 (MainThread): Parsing macros/adapters.sql
+2021-09-14 18:03:14.512062 (MainThread): Parsing macros/materializations/merge.sql
+2021-09-14 18:03:14.513865 (MainThread): Parsing macros/materializations/view.sql
+2021-09-14 18:03:14.515136 (MainThread): Parsing macros/materializations/table.sql
+2021-09-14 18:03:14.518836 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-14 18:03:14.527633 (MainThread): Parsing macros/core.sql
+2021-09-14 18:03:14.531157 (MainThread): Parsing macros/materializations/test.sql
+2021-09-14 18:03:14.537752 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-14 18:03:14.547536 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-14 18:03:14.549182 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-14 18:03:14.566905 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-14 18:03:14.598770 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-14 18:03:14.620325 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-14 18:03:14.622096 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-14 18:03:14.629655 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-14 18:03:14.643326 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-14 18:03:14.650092 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-14 18:03:14.656447 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-14 18:03:14.661453 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-14 18:03:14.662283 (MainThread): Parsing macros/etc/query.sql
+2021-09-14 18:03:14.663193 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-14 18:03:14.664691 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-14 18:03:14.673598 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-14 18:03:14.675397 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-14 18:03:14.676883 (MainThread): Parsing macros/adapters/common.sql
+2021-09-14 18:03:14.722272 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-14 18:03:14.724008 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-14 18:03:14.725129 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-14 18:03:14.726420 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-14 18:03:14.895980 (MainThread): Acquiring new snowflake connection "model.netflix_audience_behaviour.my_first_dbt_model".
+2021-09-14 18:03:14.905533 (MainThread): Acquiring new snowflake connection "model.netflix_audience_behaviour.my_second_dbt_model".
+2021-09-14 18:03:14.943080 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:14.944895 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:14.946689 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:14.948360 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:14.965595 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f1de16dd-39d6-4c7d-9951-e437d6425c71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba3fd00>]}
+2021-09-14 18:03:14.971279 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f1de16dd-39d6-4c7d-9951-e437d6425c71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b978a90>]}
+2021-09-14 18:03:14.971595 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 2 seed files, 0 sources, 0 exposures
+2021-09-14 18:03:14.972783 (MainThread): 
+2021-09-14 18:03:14.973096 (MainThread): Acquiring new snowflake connection "master".
+2021-09-14 18:03:14.973910 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_production".
+2021-09-14 18:03:14.988445 (ThreadPoolExecutor-0_0): Using snowflake connection "list_production".
+2021-09-14 18:03:14.988589 (ThreadPoolExecutor-0_0): On list_production: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "sf-tier-analytics", "target_name": "dev", "connection_name": "list_production"} */
+
+    show terse schemas in database production
+    limit 10000
+2021-09-14 18:03:14.988690 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-14 18:03:16.425397 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 35 in 1.44 seconds
+2021-09-14 18:03:16.433626 (ThreadPoolExecutor-0_0): On list_production: Close
+2021-09-14 18:03:16.562061 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_production_dbt_victoria_bi_dbt_test__audit".
+2021-09-14 18:03:16.562618 (ThreadPoolExecutor-1_1): Acquiring new snowflake connection "list_production_dbt_victoria_bi".
+2021-09-14 18:03:16.570737 (ThreadPoolExecutor-1_0): Using snowflake connection "list_production_dbt_victoria_bi_dbt_test__audit".
+2021-09-14 18:03:16.573045 (ThreadPoolExecutor-1_1): Using snowflake connection "list_production_dbt_victoria_bi".
+2021-09-14 18:03:16.573186 (ThreadPoolExecutor-1_0): On list_production_dbt_victoria_bi_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "sf-tier-analytics", "target_name": "dev", "connection_name": "list_production_dbt_victoria_bi_dbt_test__audit"} */
+
+    show terse objects in production.dbt_victoria_bi_dbt_test__audit
+2021-09-14 18:03:16.573331 (ThreadPoolExecutor-1_1): On list_production_dbt_victoria_bi: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "sf-tier-analytics", "target_name": "dev", "connection_name": "list_production_dbt_victoria_bi"} */
+
+    show terse objects in production.dbt_victoria_bi
+2021-09-14 18:03:16.573471 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-09-14 18:03:16.573582 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state init
+2021-09-14 18:03:17.423378 (ThreadPoolExecutor-1_1): SQL status: SUCCESS 433 in 0.85 seconds
+2021-09-14 18:03:17.442266 (ThreadPoolExecutor-1_1): On list_production_dbt_victoria_bi: Close
+2021-09-14 18:03:18.160198 (ThreadPoolExecutor-1_0): Snowflake query id: 019ef2bb-3200-9f78-0000-93150bc7e4a2
+2021-09-14 18:03:18.160462 (ThreadPoolExecutor-1_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2021-09-14 18:03:18.161392 (ThreadPoolExecutor-1_0): Error running SQL: macro list_relations_without_caching
+2021-09-14 18:03:18.161534 (ThreadPoolExecutor-1_0): Rolling back transaction.
+2021-09-14 18:03:18.161766 (ThreadPoolExecutor-1_0): On list_production_dbt_victoria_bi_dbt_test__audit: Close
+2021-09-14 18:03:18.332908 (MainThread): Using snowflake connection "master".
+2021-09-14 18:03:18.333229 (MainThread): On master: BEGIN
+2021-09-14 18:03:18.333389 (MainThread): Opening a new connection, currently in state init
+2021-09-14 18:03:20.020623 (MainThread): SQL status: SUCCESS 1 in 1.69 seconds
+2021-09-14 18:03:20.020890 (MainThread): On master: COMMIT
+2021-09-14 18:03:20.021163 (MainThread): Using snowflake connection "master".
+2021-09-14 18:03:20.021320 (MainThread): On master: COMMIT
+2021-09-14 18:03:20.186898 (MainThread): SQL status: SUCCESS 1 in 0.17 seconds
+2021-09-14 18:03:20.187128 (MainThread): On master: Close
+2021-09-14 18:03:20.578857 (MainThread): 20:03:20 | Concurrency: 4 threads (target='dev')
+2021-09-14 18:03:20.579088 (MainThread): 20:03:20 | 
+2021-09-14 18:03:20.580871 (Thread-1): Began running node seed.netflix_audience_behaviour.netflix_titles
+2021-09-14 18:03:20.581087 (Thread-2): Began running node seed.netflix_audience_behaviour.vodclickstream_uk_movies
+2021-09-14 18:03:20.581463 (Thread-1): 20:03:20 | 1 of 2 START seed file dbt_victoria_bi.netflix_titles................ [RUN]
+2021-09-14 18:03:20.581709 (Thread-2): 20:03:20 | 2 of 2 START seed file dbt_victoria_bi.vodclickstream_uk_movies...... [RUN]
+2021-09-14 18:03:20.582081 (Thread-1): Acquiring new snowflake connection "seed.netflix_audience_behaviour.netflix_titles".
+2021-09-14 18:03:20.582628 (Thread-2): Acquiring new snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:03:20.582885 (Thread-1): finished collecting timing info
+2021-09-14 18:03:20.583085 (Thread-2): finished collecting timing info
+2021-09-14 18:03:21.555008 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.561030 (Thread-1): * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+default value of False was chosen. The default will change to True in a future
+release.
+
+For more information, see:
+https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+2021-09-14 18:03:21.574323 (Thread-1): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f1de16dd-39d6-4c7d-9951-e437d6425c71', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b91a2b0>]}
+2021-09-14 18:03:21.579924 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.586000 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.586218 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.586384 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.592881 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.593090 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.630251 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.636842 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.637066 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.643643 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.643836 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:03:21.644706 (Thread-1): Using snowflake connection "seed.netflix_audience_behaviour.netflix_titles".
+2021-09-14 18:03:21.644819 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: BEGIN
+2021-09-14 18:03:21.644929 (Thread-1): Opening a new connection, currently in state closed
+2021-09-14 18:03:23.630918 (Thread-1): SQL status: SUCCESS 1 in 1.99 seconds
+2021-09-14 18:03:23.647118 (Thread-1): Using snowflake connection "seed.netflix_audience_behaviour.netflix_titles".
+2021-09-14 18:03:23.657585 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "sf-tier-analytics", "target_name": "dev", "node_id": "seed.netflix_audience_behaviour.netflix_titles"} */
+
+    create table production.dbt_victoria_bi.netflix_titles (show_id text,type text,title text,director text,cast text,country text,date_added text,release_year integer,rating text,duration text,listed_in text,description text)
+2021-09-14 18:03:24.008900 (Thread-1): SQL status: SUCCESS 1 in 0.35 seconds
+2021-09-14 18:03:36.287775 (Thread-1): Using snowflake connection "seed.netflix_audience_behaviour.netflix_titles".
+2021-09-14 18:03:36.294885 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: insert into production.dbt_victoria_bi.netflix_titles (show_id, type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, description) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,...
+2021-09-14 18:03:42.119330 (Thread-1): SQL status: SUCCESS 7787 in 5.82 seconds
+2021-09-14 18:03:42.163089 (Thread-1): Writing runtime SQL for node "seed.netflix_audience_behaviour.netflix_titles"
+2021-09-14 18:03:42.255750 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: COMMIT
+2021-09-14 18:03:42.261231 (Thread-1): Using snowflake connection "seed.netflix_audience_behaviour.netflix_titles".
+2021-09-14 18:03:42.261373 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: COMMIT
+2021-09-14 18:03:42.700595 (Thread-1): SQL status: SUCCESS 1 in 0.44 seconds
+2021-09-14 18:03:42.707200 (Thread-1): finished collecting timing info
+2021-09-14 18:03:42.719491 (Thread-1): On seed.netflix_audience_behaviour.netflix_titles: Close
+2021-09-14 18:03:42.965967 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f1de16dd-39d6-4c7d-9951-e437d6425c71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bce1880>]}
+2021-09-14 18:03:42.977386 (Thread-1): 20:03:42 | 1 of 2 OK loaded seed file dbt_victoria_bi.netflix_titles............ [INSERT 7787 in 22.38s]
+2021-09-14 18:03:42.994884 (Thread-1): Finished running node seed.netflix_audience_behaviour.netflix_titles
+2021-09-14 18:04:12.806457 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:12.807618 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.098637 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.098916 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.099076 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.099222 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.099368 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.099510 (Thread-2): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-14 18:04:14.100341 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:14.100459 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: BEGIN
+2021-09-14 18:04:14.100589 (Thread-2): Opening a new connection, currently in state closed
+2021-09-14 18:04:14.993933 (Thread-2): SQL status: SUCCESS 1 in 0.89 seconds
+2021-09-14 18:04:14.994115 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:14.994280 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "sf-tier-analytics", "target_name": "dev", "node_id": "seed.netflix_audience_behaviour.vodclickstream_uk_movies"} */
+
+    create table production.dbt_victoria_bi.vodclickstream_uk_movies (id integer,datetime timestamp without time zone,duration integer,title text,genres text,release_date text,movie_id text,user_id text)
+2021-09-14 18:04:15.328178 (Thread-2): SQL status: SUCCESS 1 in 0.33 seconds
+2021-09-14 18:04:19.237678 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:19.237841 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:04:24.944793 (Thread-2): SQL status: SUCCESS 10000 in 5.71 seconds
+2021-09-14 18:04:28.895554 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:28.895708 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:04:32.568822 (Thread-2): SQL status: SUCCESS 10000 in 3.67 seconds
+2021-09-14 18:04:36.699705 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:36.699865 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:04:40.800520 (Thread-2): SQL status: SUCCESS 10000 in 4.10 seconds
+2021-09-14 18:04:46.413368 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:46.413589 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:04:50.246800 (Thread-2): SQL status: SUCCESS 10000 in 3.83 seconds
+2021-09-14 18:04:54.908379 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:04:54.908627 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:04:59.434751 (Thread-2): SQL status: SUCCESS 10000 in 4.53 seconds
+2021-09-14 18:05:03.303989 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:03.304149 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:07.571446 (Thread-2): SQL status: SUCCESS 10000 in 4.27 seconds
+2021-09-14 18:05:11.366086 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:11.366256 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:14.699751 (Thread-2): SQL status: SUCCESS 10000 in 3.33 seconds
+2021-09-14 18:05:18.688412 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:18.688616 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:21.871532 (Thread-2): SQL status: SUCCESS 10000 in 3.18 seconds
+2021-09-14 18:05:25.632556 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:25.632718 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:29.540683 (Thread-2): SQL status: SUCCESS 10000 in 3.91 seconds
+2021-09-14 18:05:33.318705 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:33.318862 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:38.013381 (Thread-2): SQL status: SUCCESS 10000 in 4.69 seconds
+2021-09-14 18:05:41.793937 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:41.794091 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:45.730450 (Thread-2): SQL status: SUCCESS 10000 in 3.94 seconds
+2021-09-14 18:05:49.525020 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:49.525190 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:52.481685 (Thread-2): SQL status: SUCCESS 10000 in 2.96 seconds
+2021-09-14 18:05:56.214523 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:05:56.214749 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:05:59.884976 (Thread-2): SQL status: SUCCESS 10000 in 3.67 seconds
+2021-09-14 18:06:03.641079 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:03.641239 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:07.072847 (Thread-2): SQL status: SUCCESS 10000 in 3.43 seconds
+2021-09-14 18:06:10.757082 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:10.757298 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:14.972878 (Thread-2): SQL status: SUCCESS 10000 in 4.22 seconds
+2021-09-14 18:06:19.166598 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:19.166755 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:23.030127 (Thread-2): SQL status: SUCCESS 10000 in 3.86 seconds
+2021-09-14 18:06:26.988680 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:26.988868 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:31.021136 (Thread-2): SQL status: SUCCESS 10000 in 4.03 seconds
+2021-09-14 18:06:35.143463 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:35.143647 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:38.732309 (Thread-2): SQL status: SUCCESS 10000 in 3.59 seconds
+2021-09-14 18:06:42.494624 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:42.494785 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:45.950968 (Thread-2): SQL status: SUCCESS 10000 in 3.46 seconds
+2021-09-14 18:06:51.113210 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:51.113567 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:06:54.857443 (Thread-2): SQL status: SUCCESS 10000 in 3.74 seconds
+2021-09-14 18:06:59.696557 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:06:59.697410 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:02.812747 (Thread-2): SQL status: SUCCESS 10000 in 3.12 seconds
+2021-09-14 18:07:06.667060 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:06.667245 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:10.338331 (Thread-2): SQL status: SUCCESS 10000 in 3.67 seconds
+2021-09-14 18:07:14.047055 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:14.047217 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:17.449493 (Thread-2): SQL status: SUCCESS 10000 in 3.40 seconds
+2021-09-14 18:07:21.233841 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:21.234003 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:24.734222 (Thread-2): SQL status: SUCCESS 10000 in 3.50 seconds
+2021-09-14 18:07:28.530148 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:28.530308 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:32.045142 (Thread-2): SQL status: SUCCESS 10000 in 3.51 seconds
+2021-09-14 18:07:35.742282 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:35.742442 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:38.837626 (Thread-2): SQL status: SUCCESS 10000 in 3.10 seconds
+2021-09-14 18:07:42.523708 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:42.523870 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:46.625221 (Thread-2): SQL status: SUCCESS 10000 in 4.10 seconds
+2021-09-14 18:07:50.422493 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:50.422736 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:07:54.763834 (Thread-2): SQL status: SUCCESS 10000 in 4.34 seconds
+2021-09-14 18:07:58.492236 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:07:58.492417 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:02.698156 (Thread-2): SQL status: SUCCESS 10000 in 4.21 seconds
+2021-09-14 18:08:06.494520 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:06.494740 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:09.613013 (Thread-2): SQL status: SUCCESS 10000 in 3.12 seconds
+2021-09-14 18:08:13.411215 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:13.411370 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:16.908495 (Thread-2): SQL status: SUCCESS 10000 in 3.50 seconds
+2021-09-14 18:08:20.753874 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:20.754035 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:24.454026 (Thread-2): SQL status: SUCCESS 10000 in 3.70 seconds
+2021-09-14 18:08:29.611275 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:29.616484 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:33.564981 (Thread-2): SQL status: SUCCESS 10000 in 3.95 seconds
+2021-09-14 18:08:38.664785 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:38.665722 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:42.516945 (Thread-2): SQL status: SUCCESS 10000 in 3.85 seconds
+2021-09-14 18:08:46.441485 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:46.441653 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:50.309722 (Thread-2): SQL status: SUCCESS 10000 in 3.87 seconds
+2021-09-14 18:08:54.053874 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:08:54.054041 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:08:57.738792 (Thread-2): SQL status: SUCCESS 10000 in 3.68 seconds
+2021-09-14 18:09:01.458424 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:01.458597 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:05.170677 (Thread-2): SQL status: SUCCESS 10000 in 3.71 seconds
+2021-09-14 18:09:10.577350 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:10.577531 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:14.313893 (Thread-2): SQL status: SUCCESS 10000 in 3.74 seconds
+2021-09-14 18:09:18.216996 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:18.217155 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:21.890139 (Thread-2): SQL status: SUCCESS 10000 in 3.67 seconds
+2021-09-14 18:09:25.671067 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:25.671223 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:29.411362 (Thread-2): SQL status: SUCCESS 10000 in 3.74 seconds
+2021-09-14 18:09:33.780313 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:33.780553 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:36.725716 (Thread-2): SQL status: SUCCESS 10000 in 2.94 seconds
+2021-09-14 18:09:41.095756 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:41.095934 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:44.524608 (Thread-2): SQL status: SUCCESS 10000 in 3.43 seconds
+2021-09-14 18:09:49.096845 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:49.097033 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:09:52.577438 (Thread-2): SQL status: SUCCESS 10000 in 3.48 seconds
+2021-09-14 18:09:57.011352 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:09:57.011514 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:00.629734 (Thread-2): SQL status: SUCCESS 10000 in 3.62 seconds
+2021-09-14 18:10:04.852384 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:04.852577 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:08.997013 (Thread-2): SQL status: SUCCESS 10000 in 4.14 seconds
+2021-09-14 18:10:13.506427 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:13.506616 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:17.033836 (Thread-2): SQL status: SUCCESS 10000 in 3.53 seconds
+2021-09-14 18:10:21.798950 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:21.799156 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:25.205814 (Thread-2): SQL status: SUCCESS 10000 in 3.41 seconds
+2021-09-14 18:10:29.938157 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:29.938354 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:33.897999 (Thread-2): SQL status: SUCCESS 10000 in 3.96 seconds
+2021-09-14 18:10:38.240367 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:38.241419 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:41.676128 (Thread-2): SQL status: SUCCESS 10000 in 3.43 seconds
+2021-09-14 18:10:45.851098 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:45.851319 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:49.898912 (Thread-2): SQL status: SUCCESS 10000 in 4.05 seconds
+2021-09-14 18:10:54.101189 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:10:54.101354 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:10:57.949408 (Thread-2): SQL status: SUCCESS 10000 in 3.85 seconds
+2021-09-14 18:11:02.164074 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:02.164249 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:05.504175 (Thread-2): SQL status: SUCCESS 10000 in 3.34 seconds
+2021-09-14 18:11:09.520119 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:09.520361 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:13.000532 (Thread-2): SQL status: SUCCESS 10000 in 3.48 seconds
+2021-09-14 18:11:17.138542 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:17.138712 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:20.723254 (Thread-2): SQL status: SUCCESS 10000 in 3.58 seconds
+2021-09-14 18:11:24.774167 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:24.774359 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:30.115582 (Thread-2): SQL status: SUCCESS 10000 in 5.34 seconds
+2021-09-14 18:11:34.331525 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:34.331697 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:37.537860 (Thread-2): SQL status: SUCCESS 10000 in 3.21 seconds
+2021-09-14 18:11:41.508442 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:41.508633 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:45.422706 (Thread-2): SQL status: SUCCESS 10000 in 3.91 seconds
+2021-09-14 18:11:50.015587 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:50.016719 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:11:53.352930 (Thread-2): SQL status: SUCCESS 10000 in 3.34 seconds
+2021-09-14 18:11:58.316027 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:11:58.316892 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:02.011902 (Thread-2): SQL status: SUCCESS 10000 in 3.69 seconds
+2021-09-14 18:12:06.102994 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:06.113401 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:09.966365 (Thread-2): SQL status: SUCCESS 10000 in 3.85 seconds
+2021-09-14 18:12:14.153115 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:14.153619 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:17.214426 (Thread-2): SQL status: SUCCESS 10000 in 3.06 seconds
+2021-09-14 18:12:21.260477 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:21.260642 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:24.882703 (Thread-2): SQL status: SUCCESS 10000 in 3.62 seconds
+2021-09-14 18:12:28.928440 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:28.928620 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:32.828756 (Thread-2): SQL status: SUCCESS 10000 in 3.90 seconds
+2021-09-14 18:12:36.726493 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:36.726656 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:40.381915 (Thread-2): SQL status: SUCCESS 10000 in 3.66 seconds
+2021-09-14 18:12:44.242834 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:44.243363 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:48.992923 (Thread-2): SQL status: SUCCESS 10000 in 4.75 seconds
+2021-09-14 18:12:52.881364 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:12:52.882291 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:12:57.863685 (Thread-2): SQL status: SUCCESS 10000 in 4.98 seconds
+2021-09-14 18:13:01.744350 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:13:01.744517 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:13:05.424778 (Thread-2): SQL status: SUCCESS 10000 in 3.68 seconds
+2021-09-14 18:13:05.679467 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:13:05.679643 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: insert into production.dbt_victoria_bi.vodclickstream_uk_movies (id, datetime, duration, title, genres, release_date, movie_id, user_id) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2021-09-14 18:13:06.770994 (Thread-2): SQL status: SUCCESS 1736 in 1.09 seconds
+2021-09-14 18:13:06.777300 (Thread-2): Writing runtime SQL for node "seed.netflix_audience_behaviour.vodclickstream_uk_movies"
+2021-09-14 18:13:06.780434 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: COMMIT
+2021-09-14 18:13:06.780654 (Thread-2): Using snowflake connection "seed.netflix_audience_behaviour.vodclickstream_uk_movies".
+2021-09-14 18:13:06.780767 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: COMMIT
+2021-09-14 18:13:15.397799 (Thread-2): SQL status: SUCCESS 1 in 8.62 seconds
+2021-09-14 18:13:15.398731 (Thread-2): finished collecting timing info
+2021-09-14 18:13:15.398917 (Thread-2): On seed.netflix_audience_behaviour.vodclickstream_uk_movies: Close
+2021-09-14 18:13:15.642564 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f1de16dd-39d6-4c7d-9951-e437d6425c71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddc4340>]}
+2021-09-14 18:13:15.642893 (Thread-2): 20:13:15 | 2 of 2 OK loaded seed file dbt_victoria_bi.vodclickstream_uk_movies.. [INSERT 671736 in 595.06s]
+2021-09-14 18:13:15.643060 (Thread-2): Finished running node seed.netflix_audience_behaviour.vodclickstream_uk_movies
+2021-09-14 18:13:15.644712 (MainThread): Acquiring new snowflake connection "master".
+2021-09-14 18:13:15.645048 (MainThread): Using snowflake connection "master".
+2021-09-14 18:13:15.645180 (MainThread): On master: BEGIN
+2021-09-14 18:13:15.645296 (MainThread): Opening a new connection, currently in state closed
+2021-09-14 18:13:16.533775 (MainThread): SQL status: SUCCESS 1 in 0.89 seconds
+2021-09-14 18:13:16.534012 (MainThread): On master: COMMIT
+2021-09-14 18:13:16.534218 (MainThread): Using snowflake connection "master".
+2021-09-14 18:13:16.534351 (MainThread): On master: COMMIT
+2021-09-14 18:13:16.696465 (MainThread): SQL status: SUCCESS 1 in 0.16 seconds
+2021-09-14 18:13:16.696717 (MainThread): On master: Close
+2021-09-14 18:13:16.844997 (MainThread): 20:13:16 | 
+2021-09-14 18:13:16.845212 (MainThread): 20:13:16 | Finished running 2 seeds in 601.87s.
+2021-09-14 18:13:16.845403 (MainThread): Connection 'master' was properly closed.
+2021-09-14 18:13:16.845518 (MainThread): Connection 'seed.netflix_audience_behaviour.netflix_titles' was properly closed.
+2021-09-14 18:13:16.845625 (MainThread): Connection 'seed.netflix_audience_behaviour.vodclickstream_uk_movies' was properly closed.
+2021-09-14 18:13:16.851713 (MainThread): 
+2021-09-14 18:13:16.851911 (MainThread): Completed successfully
+2021-09-14 18:13:16.852081 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-09-14 18:13:16.852292 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b95afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b966eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd00790>]}
+2021-09-14 18:13:16.852526 (MainThread): Flushing usage events
