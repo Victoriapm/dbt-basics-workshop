@@ -20,10 +20,6 @@ Try running the following commands:
 - dbt run
 - dbt test
 
-Inside the repo we have two projects: 
-- init-project: this will be the base to start and conduct the workshop
-- complete-projetc: this will be the end project as it will look like once the workshop has been finished
-
 A project includes the following files: 
 - dbt_project.yml: file used to configure the dbt project, make sure the profile here matches the one setup during local installation in ~/.dbt/profiles.yml
 - csv files in the data folder: these will be our sources, files described above
